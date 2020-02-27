@@ -35,7 +35,7 @@ public class Solver extends RecursiveTask<Integer> {
             Cell[][] clone = MatrixUtils.clone(this.matrix);
             Cell cell = clone[choice.row][choice.col];
             cell.fix(i);
-            List<Cell> queue = new ArrayList<>() {{add(cell);}};
+            List<Cell> queue = new ArrayList<Cell>() {{add(cell);}};
             solvers.add(new Solver(clone, queue));
         }
         return start(solvers);

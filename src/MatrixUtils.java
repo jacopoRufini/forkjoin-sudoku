@@ -70,7 +70,7 @@ public class MatrixUtils {
     public static void updateMap(Cell cell, Map<Integer, List<Cell>> map) {
         for (int value : cell.value) {
             List<Cell> set = map.get(value);
-            if (set == null) map.put(value, new ArrayList<>() {{add(cell);}});
+            if (set == null) map.put(value, new ArrayList<Cell>() {{add(cell);}});
             else set.add(cell);
         }
     }
