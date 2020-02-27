@@ -1,2 +1,16 @@
 # forkjoin-sudoku
-Fork/join sudoku solver, written in java, coded for my exam.
+
+## Introduction
+
+This is a software I coded for my "multi-core programming" exam.
+It finds all the possible solutions of a given Sudoku and it's built to compare execution time between single and multi-core systems. It follows Divide Et Impera paradigm implemented using Java ForkJoin library.
+
+## How to run it
+
+```cd forkjoin-sudoku/src/```
+
+```javac Main.java```
+
+```java Main "../tests/...."``` --> the input is a simple *.txt* file, you can find different tests in the *tests* directory
+
+Enjoy :smile:
